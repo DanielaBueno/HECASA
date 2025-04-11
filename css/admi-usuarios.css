@@ -1,0 +1,13 @@
+/* Estructura Principal */
+header {
+    width: 98%;
+    max-width: 900px;
+}
+
+main {
+    box-sizing: border-box;
+}
+
+table {
+    max-width: 900px;
+}

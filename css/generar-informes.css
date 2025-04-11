@@ -1,0 +1,39 @@
+/* Header */
+header {
+    width: 98%;
+}
+
+header .informes {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+select {
+    height: 40px;
+    max-width: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+    border: 3px solid var(--amarillo);
+    color: var(--azul-oscuro);
+}
+
+/* Botón de copias de seguridad */
+.btn_informes {
+    height: 40px;
+    /* align-items: center;
+    justify-content: center;
+    display: flex; */
+}
+
+main {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+table {
+    max-width: 100%;
+}

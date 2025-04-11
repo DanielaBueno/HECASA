@@ -1,0 +1,24 @@
+/* General */
+header {
+    width: 80%;
+    max-width: 750px;
+}
+
+form {
+    background-color: transparent;
+    border:none;
+    border-radius: 0;
+    box-shadow: 0 0 0 transparent;
+    padding: 8px;
+    margin: 0;
+}
+
+/* Contenido */
+main{
+    box-sizing: border-box;
+    margin: 0 20px 20px;
+}
+
+table {
+    max-width: 750px;
+}

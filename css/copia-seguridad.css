@@ -1,0 +1,31 @@
+/* Estructura Principal */
+/* Header */
+header {
+    width: 80%;
+    max-width: 800px;;
+}
+
+header .btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+form {
+    background-color: transparent;
+    border:none;
+    border-radius: 0;
+    box-shadow: 0 0 0 transparent;
+    padding: 8px;
+    margin: 0;
+}
+
+main {
+    overflow: auto;
+    margin: 0 auto;
+}
+
+table {
+    max-width: 800px;
+}
+  
+

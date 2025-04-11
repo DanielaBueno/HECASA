@@ -1,0 +1,231 @@
+@media screen and (max-width: 400px) {
+    /* Menú hamburguesa */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    #inicio, #fin {
+        margin: 0;
+    }
+
+    nav a {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid var(--beige);
+    }
+
+    nav a.active {
+        background-color: var(--amarillo);
+        color: var(--azul-oscuro);
+    }
+
+    /* CABECERA */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h2 {
+        margin: 10px;
+    }
+
+    header button {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    /* CONTENIDO */
+    main {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    /* Formularios */
+    form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Botones */
+    input[type="submit"], input[type="button"], input[type="reset"], button {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    /* Tablas */
+    table {
+        width: 95%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 10px 5px;
+        text-align: center;
+    }
+
+    /* Pie de página */
+    footer {
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Cuando la pantalla es pequeña, ocultamos los botones */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* Mostramos el menú hamburguesa */
+    .menu-hamburguesa {
+        display: flex;
+    }
+
+    /* Cuando se activa el menú hamburguesa, mostramos los botones */
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    /* Menú hamburguesa */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+        background-color: #fff; /* Fondo blanco */
+        border-top: 1px solid var(--beige); /* Separador */
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    #inicio, #fin {
+        margin: 0;
+    }
+
+    nav a {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid var(--beige);
+    }
+
+    nav a.active {
+        background-color: var(--amarillo);
+        color: var(--azul-oscuro);
+    }
+
+    /* CABECERA */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h2 {
+        margin: 10px;
+    }
+
+    header button {
+        width: 95%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    /* CONTENIDO */
+    main {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    /* Formularios */
+    form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Botones */
+    input[type="submit"], input[type="button"], input[type="reset"], button {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    /* Tablas */
+    table {
+        width: 95%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 10px 5px;
+        text-align: center;
+    }
+
+    /* Pie de página */
+    footer {
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+/* Transición suave para el menú */
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .nav-links {
+        transition: all 0.3s ease; /* Transición suave */
+    }
+}
+
+/* Mejorar la visibilidad de las tablas en pantallas medianas */
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    table {
+        width: 95%; /* Asegurar que las tablas ocupen el 100% del ancho disponible */
+    }
+}

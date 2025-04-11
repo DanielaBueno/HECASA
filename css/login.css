@@ -1,0 +1,163 @@
+:root {
+    --verde-oscuro: #8A8C3B; /* Primario */
+    --marron: #A6592D; /* Secundario */
+    --amarillo: #FAC030; /* Terciario */
+    --azul-claro: #4BA695; /* Cuarto color */
+    --blanco-agua: #DCF2F0; /* Quinto color */
+    --azul-oscuro: #0F4143; /* Sexto color */
+    --beige: #F5F4E6; /* Background color */
+}
+
+/* Fuente Raleway regular */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../media/Raleway.ttf') format('truetype');
+    font-weight: normal;
+}
+
+/* Fuente Raleway en cursiva */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../media/Raleway-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+* {
+    font-family: "Raleway";
+}
+
+:root {
+    --verde-oscuro: #8A8C3B; /* Primario */
+    --marron: #A6592D; /* Secundario */
+    --amarillo: #FAC030; /* Terciario */
+    --azul-claro: #4BA695; /* Cuarto color */
+    --blanco-agua: #DCF2F0; /* Quinto color */
+    --azul-oscuro: #0F4143; /* Sexto color */
+    --beige: #F5F4E6; /* Background color */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: url('../Media/fondo.jpeg') no-repeat center center/cover;
+}
+
+.login-container {
+    position: absolute; 
+    top: 60%; 
+    left: 70%; 
+    transform: translate(-10%, -30%); 
+    padding: 0;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    margin: 0;
+}
+
+.user-icon {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco-agua);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 40px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login-button {
+    width: 70%; 
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px auto 0; 
+    display: block;
+}
+
+.login-button:hover {
+    color:var(--beige);
+    box-shadow: 0 0 8px 2px var(--amarillo);
+    background-color: var(--azul-oscuro);
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Media Queries */
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .login-container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+    }
+
+    .user-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .form-group input {
+        width: 90%;
+    }
+
+    .login-button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .login-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 95%;
+    }
+
+    .form-group input {
+        width: 95%;
+    }
+
+    .login-button {
+        width: 95%;
+    }
+}

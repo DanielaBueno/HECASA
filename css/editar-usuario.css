@@ -1,0 +1,23 @@
+header {
+    width: 80%;
+    max-width: 600px;
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form .btn_eliminar_usuario {
+    background-color: var(--marron);
+    color: var(--beige);
+    width: 100%;
+    margin: 0;
+}
+
+form .btn_eliminar_usuario:hover {
+    background-color: var(--azul-oscuro);
+    color: var(--beige);
+    box-shadow: 0 0 8px 2px var(--amarillo);
+}

@@ -1,0 +1,22 @@
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 5px auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+.espanol {
+    font-style: italic;
+    margin-left: 20px;
+}
+
+summary, p, .espanol {
+    font-weight: normal;
+}
+
+form > * {
+    margin-bottom: 10px;
+}

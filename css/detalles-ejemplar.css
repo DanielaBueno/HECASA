@@ -1,0 +1,179 @@
+/* HEADER */
+header {
+    width: 90%;
+    max-width: 1200px;
+}
+
+header .btn-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+
+header form {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 0 transparent;
+    padding: 8px;
+    margin: 0;
+}
+
+.btn_eliminar input[type="submit"] {
+    margin: 0;
+}
+
+.btn_eliminar input[type="submit"]:hover {
+    background-color: var(--azul-claro);
+    transition: background-color 0.3s ease;
+}
+
+header button {
+    margin-left: 8px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+
+/* DETALLES DE EJEMPLAR */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: var(--verde-oscuro);
+    border-bottom: 2px solid var(--verde-oscuro);
+    padding-bottom: 5px;
+}
+
+.seccion {
+    margin-bottom: 30px;
+}
+
+.elemento {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--blanco-agua);
+    border-left: 5px solid var(--verde-oscuro);
+    border-radius: 5px;
+}
+
+.elemento span {
+    font-weight: bold;
+    color: var(--verde-oscuro);
+    min-width: 200px;
+}
+
+.elemento p {
+    margin: 0;
+    color: var(--azul-oscuro);
+    flex-grow: 1;
+    text-align: right;
+}
+
+.elemento:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    background-color: rgba(163, 214, 202, 0.534);
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.elemento:last-child {
+    margin-bottom: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        width: 95%;
+    }
+
+    .elemento {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .elemento span {
+        margin-bottom: 5px;
+        font-size: 1.2em;
+    }
+
+    .elemento p {
+        text-align: left;
+        font-size: 1em;
+    }
+
+    /* Mejoramos la visualización del contenedor principal */
+    main {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Ajuste en los títulos */
+    h3 {
+        font-size: 1.5em;
+    }
+
+    /* Botones en el header */
+    header .btn-contenedor {
+        justify-content: center;
+        margin-top: 8px;
+        flex-direction: column;
+    }
+
+    header button {
+        margin-left: 0;
+        margin-top: 10px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+/* RESPONSIVE PARA DISPOSITIVOS MUY PEQUEÑOS */
+@media (max-width: 480px) {
+    .elemento span {
+        font-size: 1em;
+    }
+
+    .elemento p {
+        font-size: 0.9em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    /* Asegura que los botones se vean uniformes y ocupen todo el ancho disponible */
+    header .btn-contenedor {
+        flex-direction: column;
+        align-items: center; 
+        gap: 10px;
+    }
+
+    header button {
+        width: 100%;
+        padding: 15px 20px;
+        text-align: center;
+    }
+}

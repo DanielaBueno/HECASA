@@ -1,0 +1,136 @@
+header {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Formulario en el header */
+header form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 15px;
+    width: 95%;
+    max-width: 1500px;
+    margin: 0;
+    border-radius: 10px;
+    background-color: var(--amarillo);
+    box-shadow: 0 0 8px 2px var(--azul-claro);
+    justify-content: space-between;
+}
+
+header form input {
+    width: 100%;
+    flex-grow: 1;
+    padding: 8px;
+    margin: 0;
+}
+
+header form button {
+    flex-shrink: 0;
+    display: block;
+    background-color: var(--azul-oscuro);
+    color: var(--beige);
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+}
+
+header form button:hover {
+    background-color: var(--marron);
+    box-shadow: 0 0 8px 2px var(--blanco-agua);
+}
+
+/* Botones de exportar */
+header .botones-exportar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-top: 10px;
+    max-width: 1500px;
+}
+
+header .botones-exportar a {
+    display: inline-block;
+}
+
+header .botones-exportar button {
+    margin: 5px 0;
+}
+
+/* Estilos para el buscador */
+.buscador {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    padding: 8px;
+    width: 200px;
+}
+
+/* Tabla de ejemplares */
+table {
+    width: 95%;
+    max-width: 1500px;
+}
+
+/* Pantallas pequeñas (por ejemplo, teléfonos) */
+@media (max-width: 600px) {
+    header form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header form input,
+    header form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input-group input {
+        width: 100%; 
+    }
+
+    header .botones-exportar {
+        justify-content: center; 
+        gap: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+/* Pantallas medianas (por ejemplo, tablets) */
+@media (max-width: 900px) {
+    header form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .input-group input {
+        width: 100%; 
+    }
+}

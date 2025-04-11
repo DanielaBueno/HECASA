@@ -1,0 +1,303 @@
+:root {
+    --verde-oscuro: #8A8C3B; /* Primario */
+    --marron: #A6592D; /* Secundario */
+    --amarillo: #FAC030; /* Terciario */
+    --azul-claro: #4BA695; /* Cuarto color */
+    --blanco-agua: #DCF2F0; /* Quinto color */
+    --azul-oscuro: #0F4143; /* Sexto color */
+    --beige: #F5F4E6; /* Background color */
+}
+
+/* */
+
+
+/* Fuente Raleway regular */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../media/Raleway.ttf') format('truetype');
+    font-weight: normal;
+}
+
+/* Fuente Raleway en cursiva */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../media/Raleway-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Raleway';
+}
+
+body {
+    min-height:100vh;
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--verde-oscuro);
+    padding: 10px;
+    color: var(--beige);
+    width: 100%;
+    
+}
+
+nav a, 
+nav button {
+    color:var(--beige);
+    text-decoration: none;
+    border: none;
+}
+
+nav button:hover {
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+}
+
+#inicio {
+    margin-right: auto;
+}
+
+#fin{
+    margin-left:auto;
+}
+
+/* Estilos del menú hamburguesa */
+#menu-toggle {
+    display: none; /* Ocultar el checkbox */
+}
+
+#menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex; /* Se muestra los enlaces */
+}
+
+nav a.active, 
+nav button.active {
+    background-color: var(--amarillo); 
+    color: var(--azul-oscuro);
+}
+
+
+
+/* Icono de menú */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Centrar los botones del medio */
+nav > a:not(#inicio):not(#fin) {
+    margin: 0 10px;
+}
+
+
+/* - - - - CABECERA - - - - */
+header, main{
+    padding: 10px 0;
+}
+
+header{
+    color: var(--verde-oscuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header h2 {
+    margin: 0;
+    text-align: left;
+}
+
+header button {
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+header button:hover {
+    background-color: var(--azul-claro);
+    color: var(--beige);
+}
+
+/* CONTENIDO */
+main {
+    flex: 1;
+    width: 100%;
+    margin:0px 20px 20px 20px;
+    /* display: flex; */
+    justify-content: center;
+}
+
+/* Botones */
+button{
+  background-color: transparent;
+  border-radius: 5px ;
+  border:2px solid var(--verde-oscuro);
+  color:var(--azul-oscuro);
+  padding: 10px 15px;
+  margin: 0 5px;
+}
+
+button:hover {
+    color:var(--beige);
+    box-shadow: 0 0 8px 2px var(--amarillo);
+    background-color: var(--azul-oscuro);
+}
+
+/* Enlaces */
+a {
+    color: var(--marron);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--azul-claro);
+}
+
+/* PIE DE PAGINA */
+footer {
+    margin-top: auto;
+    background-color: var(--verde-oscuro);
+    color: var(--beige);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* FORMULARIOS */
+/* Contenedor principal del formulario */
+form {
+    background-color: var(--verde-oscuro);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px var(--azul-oscuro);
+    margin: 0px 5px 5px 5px;
+    overflow: auto;
+}
+
+/* Labels */
+label {
+    color: var(--beige);
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Input */
+/* Estilos comunes para todos los inputs y select */
+input, select {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 2px solid var(--beige);
+    border-radius: 5px;
+    background-color: var(--beige);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo de foco para inputs y selects */
+input:focus, select:focus {
+    border-color: var(--amarillo);
+    background-color: var(--blanco-agua);
+    box-shadow: 0 0 5px var(--marron);
+    outline: none; 
+}
+
+/* Estilo para los botones (submit, reset, button) */
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Estilo para el input submit y button */
+input[type="submit"], input[type="button"] {
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+}
+
+/* Estilo para el botón reset */
+input[type="reset"] {
+    background-color: var(--marron);
+    color: var(--beige);
+}
+
+input[type="submit"]:hover, input[type="button"]:hover,
+input[type="reset"]:hover, button:hover {
+    background-color: var(--azul-oscuro);
+    color: var(--beige);
+    box-shadow: 0 0 8px 2px var(--amarillo);
+}
+
+
+/* TABLAS */
+/* Estilos básicos para la tabla */
+table {
+    width: 100%;
+    color: var(--azul-oscuro);
+    overflow: auto;
+    border: 2px solid var(--verde-oscuro);
+    border-radius: 10px;
+    border-spacing: 0; 
+    border-collapse: separate; /* Elimina el espacio entre celdas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+}
+
+/* Encabezados de la tabla */
+th {
+    background-color: var(--verde-oscuro);
+    border-collapse: collapse;
+    color: var(--beige);
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.inicio_tabla{
+    border-radius: 7px 0px 0px;
+}
+
+.medio_tabla {
+    border-radius: 0;
+}
+
+.fin_tabla{
+    border-radius: 0px 7px 0px 0px;
+}
+
+/* Celdas de la tabla */
+td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--verde-oscuro); /* Línea de separación entre filas */
+}
+
+/* Filas al pasar el mouse */
+tr:hover {
+    background-color: var(--blanco-agua);
+}
